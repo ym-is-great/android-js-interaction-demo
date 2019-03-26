@@ -1,0 +1,5 @@
+<resources>
+  <string name="app_name">Android and JS Communication</string>
+  <string name="say_hello_to_web">Say Hello to Web</string>
+  <string name="get_return_value">Get Return Value</string>
+</resources>

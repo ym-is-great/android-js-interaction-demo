@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo</title>
+	<style>
+		body {
+			font-size: 18px;
+		}
+		button {
+			font-size: 16px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div id="message"></div>
+		<button onclick="showToast('Hello, Android!')">Say Hello to Android</button>
+	</div>
+	<script>
+
+		let count = 0
+
+		// 调用原生函数显示短消息
+		function showToast (text) {
+			Android.showToast(text)
+		}
+
+		// 原生调用此函数打印消息
+		function showMessage (text) {
+			document.getElementById('message').innerHTML = `Android: ${text} (count: ${++count})`
+			return 200
+		}
+
+	</script>
+</body>
+</html>
